@@ -1,0 +1,24 @@
+name: "TimeAlign PIL"
+output_dir: 'docs'
+output:
+  html_document:
+    theme: cerulean
+    highlight: zenburn
+    toc: false  # Disable Table of Contents
+    
+navbar:
+  left:
+    - text: "Welcome to TimeAlign"
+      href: index.html
+    - text: "Team"
+      href: team.html
+    - text: "Study Information"
+      href: PIL.html
+    - text: "Consent Form"
+      href: consent.html
+    - text: "Sensors"
+      href: sensors.html
+    - text: "Contacts"
+      href: contacts.html
+      
+    

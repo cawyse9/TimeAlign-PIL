@@ -1,0 +1,55 @@
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+```{r logo,fig.align='center', echo=FALSE}
+knitr::include_graphics("images/Questionnaire_header_long.jpg")
+```
+
+<br><br> <br><!-- Add two line breaks -->
+&nbsp;  
+&nbsp;  
+
+#  Ambient-BD - Maynooth University Research Team  
+
+&nbsp;  
+&nbsp;  
+&nbsp;  
+&nbsp;  
+
+* Professor Lorna M. Lopez, Department of Biology, Maynooth University (Lead Investigator)  
+* Professor Andrew Coogan, Department of Psychology, Maynooth University (Lead Investigator)  
+* Dr Cathy Wyse, Department of Biology, Maynooth University (Senior Research Fellow)  
+* Ms Emma Ryan, Department of Biology, Maynooth University (Research Assistant)   
+* Mr Benji Kirke, Department of Biology, Maynooth University (Research Assistant)   
+
+<br>
+Please visit the Ambient-BD project website to learn more about the rest of the Ambient-BD team members 
+https://www.ambientbd.com/
+
+&nbsp;  
+&nbsp; 
+&nbsp;  
+&nbsp;  
+<center>  
+![](images/team.svg)
+</center> 
+&nbsp;  
+&nbsp; 
+&nbsp;  
+&nbsp;  
+
+
+&nbsp;  
+&nbsp; &nbsp;  
+&nbsp; 
+
+##### Please contact the team anytime if you would like more information about our research
+
+Ambient-BD Research Team,  
+Department of Biology,  
+Maynooth University,  
+Co. Kildare  
+ambientbd@mu.ie  
