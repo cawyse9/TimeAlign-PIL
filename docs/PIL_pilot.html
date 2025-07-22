@@ -1,0 +1,920 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+
+
+<title>PIL_pilot.knit</title>
+
+<script src="site_libs/header-attrs-2.27/header-attrs.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/cerulean.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
+
+
+
+
+
+
+
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+details > summary > p:only-child {
+  display: inline;
+}
+pre code {
+  padding: 0;
+}
+</style>
+
+
+<style type="text/css">
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #adb5bd;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+
+<script type="text/javascript">
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark the anchor link active (and if it's in a dropdown, also mark that active)
+  var dropdown = menuAnchor.closest('li.dropdown');
+  if (window.bootstrap) { // Bootstrap 4+
+    menuAnchor.addClass('active');
+    dropdown.find('> .dropdown-toggle').addClass('active');
+  } else { // Bootstrap 3
+    menuAnchor.parent().addClass('active');
+    dropdown.addClass('active');
+  }
+
+  // Navbar adjustments
+  var navHeight = $(".navbar").first().height() + 15;
+  var style = document.createElement('style');
+  var pt = "padding-top: " + navHeight + "px; ";
+  var mt = "margin-top: -" + navHeight + "px; ";
+  var css = "";
+  // offset scroll position for anchor links (for fixed navbar)
+  for (var i = 1; i <= 6; i++) {
+    css += ".section h" + i + "{ " + pt + mt + "}\n";
+  }
+  style.innerHTML = "body {" + pt + "padding-bottom: 40px; }\n" + css;
+  document.head.appendChild(style);
+});
+</script>
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "\e259";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "\e258";
+  font-family: 'Glyphicons Halflings';
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html"></a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="PIL_pilot.html">Study Information</a>
+</li>
+<li>
+  <a href="consent.html">Consent Form</a>
+</li>
+<li>
+  <a href="sensors.html">Sensors</a>
+</li>
+<li>
+  <a href="contacts.html">Contacts</a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div id="header">
+
+
+
+
+</div>
+
+
+<p><img src="images/fn_mu_timealign_jpg.jpg" width="2082" style="display: block; margin: auto;" /></p>
+<p><br><br> <br><!-- Add two line breaks --></p>
+<div id="research-study-information-sheets---pilot-study"
+class="section level2">
+<h2>Research Study Information Sheets - Pilot Study</h2>
+<p> <br />
+ </p>
+<div id="research-team" class="section level3">
+<h3>Research Team:</h3>
+<p>Prof Lorna M. Lopez, Maynooth University<br />
+Dr Cathy Wyse, Maynooth University<br />
+Mr Jake Kennedy, Maynooth University</p>
+<p> </p>
+<p>Thank you for your interest in our research study. Please read this
+information carefully and discuss it with your family if you wish. Take
+your time to read it and don’t feel under any pressure to decide right
+away. It is important for you to understand the study fully before you
+decide to participate or not. If anything is unclear to you, or if you
+have any questions at all about the study, please don’t hesitate to get
+in touch with us by email (<a href="mailto:TimeAlign@mu.ie"
+class="email">TimeAlign@mu.ie</a>).</p>
+<p>You are invited to participate in this research study which aims to
+investigate sleep and circadian rhythms in people with epilepsy.</p>
+<p> </p>
+</div>
+<div id="why-are-we-doing-this-research-study" class="section level3">
+<h3>Why are we doing this research study?</h3>
+<p>Circadian rhythms are changes in physiology and behaviour that follow
+a 24-hour cycle. For example, the daily rhythm in body temperature,
+alertness and the sleep wake cycle are all examples of circadian
+rhythms. In fact, almost every cell in the human body is regulated by a
+circadian clock, and this does not depend on the light dark cycle or the
+timing of food or exercise. Circadian timing has been “hard-wired” into
+our physiology by evolution so that humans have 24h rhythms by
+default.</p>
+<p>It has been known for centuries that the occurrence of seizures in
+some people with epilepsy follow daily or monthly patterns. For example,
+some people only have seizures at night, or at a particular time of day.
+It is possible that circadian clocks in the brain contribute to these
+patterns.</p>
+<p>The overall aim of this project is to assess daily, weekly and
+monthly patterns in sleep and circadian timing in people with epilepsy,
+and to investigate if any of these patterns match the timing of
+seizures.</p>
+<p>Medication is an important aspect of seizure control, and we will
+also investigate if variations in the times that people with epilepsy
+take their medication is related to the timing of their seizures.</p>
+<p>Many people with epilepsy have infrequent seizures, so that long
+periods of monitoring (several months) are required to capture patterns
+in their timing. In this project, we will use advances in sensor
+technology to unobtrusively monitor the timing of sleep, medication and
+activity in order to minimise the burden on the participants that are
+happy to participate in our research over long periods of time.</p>
+<p> </p>
+</div>
+<div id="why-am-i-being-asked-to-take-part-in-this-research-study"
+class="section level3">
+<h3>Why am I being asked to take part in this research study?</h3>
+<p>We have asked you to take part because you are a person with epilepsy
+that is taking daily anti-epileptic drugs.<br />
+To participate you must:</p>
+<ul>
+<li>Have been diagnosed with epilepsy by a neurologist<br />
+</li>
+<li>Be currently taking anti-seizure medication at least once per
+day<br />
+</li>
+<li>Be at least 18 years old</li>
+<li>Be willing and able to consent to this study<br />
+</li>
+<li>Have access to email and the internet<br />
+</li>
+<li>You and anyone sharing your bedroom must be happy to have radar
+sensors fitted at the bedside</li>
+</ul>
+<p>You can not participate if you:</p>
+<ul>
+<li>Are pregnant<br />
+</li>
+<li>Have any infectious disease<br />
+</li>
+<li>Have allergies or skin condition that might affect your ability to
+have sensors attached to your skin, or to wear a wrist watch</li>
+</ul>
+<p> </p>
+</div>
+<div id="do-i-have-to-take-part" class="section level3">
+<h3>Do I have to take part?</h3>
+<p>It is important to know that you do not have to take part in this
+study if you do not wish to. You can change your mind about
+participating in this study at any time, even after the study has begun.
+If you decide that you do not want to participate, this will have no
+effect on your current or future participation in any other research
+studies. You do not have to provide a reason for deciding not to
+participate or changing your mind. If you wish to opt out at any point,
+please contact the research team (Study email: <a
+href="mailto:TimeAlign@mu.ie" class="email">TimeAlign@mu.ie</a>), and we
+will organise this for you.</p>
+<p> </p>
+</div>
+<div
+id="what-happens-if-i-change-my-mind-about-participating-during-the-study"
+class="section level3">
+<h3>What happens if I change my mind about participating during the
+study?</h3>
+<p>You can withdraw at any time and without giving a reason. If you
+decide to do so, we will immediately remove all of your data from the
+study, including your sensor, sleep and questionnaire data. Electronic
+copies of data will be overwritten, and hard copies will be destroyed by
+incineration.</p>
+<p> </p>
+</div>
+<div id="how-will-the-study-be-carried-out" class="section level3">
+<h3>How will the study be carried out?</h3>
+<p>The studies will be carried out as you undergo your usual activities
+over 12 months, you will not be required to come to Maynooth University
+at any point. We will give you everything you need to set up the sensors
+yourself. We will always give you instructions and all materials and
+equipment needed to complete the study and we will always be available
+to answer any questions you have about the study.<br />
+ </p>
+<p>You will be asked to do the following tasks:</p>
+<p> </p>
+<ol style="list-style-type: decimal">
+<li><strong>Wear a wrist-worn activity monitor</strong> (like a Fitbit)
+at all times (day and night) for 1 week. You will need to remove the
+monitor for showering or swimming, and put it back on as soon as
+possible afterwards. The device will monitor movement and light exposure
+continuously throughout the day and night.</li>
+</ol>
+<p> </p>
+<ol start="2" style="list-style-type: decimal">
+<li><p><strong>Fit a bedside sensor</strong> that monitors movement and
+environment in your bedroom for 1 week (see image below). The sensor
+records the following information:</p>
+<ul>
+<li>Movement</li>
+<li>Room temperature</li>
+<li>Sound in decibels</li>
+<li>Light</li>
+</ul>
+<p> </p>
+<p>This sensor uses radar to monitor movement and we can use this
+information to design algorithms that can guess whether you are awake or
+asleep. We cannot tell what you are doing when you are awake. It records
+noise levels, not sounds or voices and ambient light. This sensor
+transmits data via the internet to a cloud platform where we can
+download your data.</p>
+<p>The sensor has its own internet connection and you will not be able
+to download the data or access the sensor controls. It is unobtrusive
+and makes no sound, and has no display. If you go on holiday or stay
+somewhere else overnight, we will ask you to bring the bedside sensor if
+possible.</p></li>
+</ol>
+<p> </p>
+<ol start="3" style="list-style-type: decimal">
+<li><p><strong>Complete some questionnaires</strong> about your health,
+lifestyle and sleep. Questionnaires will take approximately 10 minutes
+each to complete and there are 3 in total. You will need to keep a
+seizure diary for 1 week.<br />
+ </p></li>
+<li><p><strong>Keep a small sensor with your current pill box</strong>,
+or where you keep your medication. You need to press the button each
+time you take your medication which will record the times. This device
+has no communication function, it can only record and store time
+data.</p>
+<p>We will ask you to return the device to us in prepaid envelopes so
+that we can download the data. We will send you a new device at these
+times. We will keep in touch with you and remind you when it is time to
+swap devices.</p></li>
+</ol>
+<p> </p>
+<ol start="5" style="list-style-type: decimal">
+<li><strong>Keep a sleep diary</strong> – we will send you a link by
+text or email every morning where you can record how you slept. This
+will take 1-2 minutes and soon becomes a habit.</li>
+</ol>
+<p> </p>
+<ol start="6" style="list-style-type: decimal">
+<li><strong>Give feedback</strong> on your experience participating and
+help us to improve the study design based on your experience of having
+epilepsy.</li>
+</ol>
+<p> </p>
+</div>
+<div
+id="will-taking-part-in-this-study-require-me-to-change-anything-about-how-i-take-my-medication"
+class="section level3">
+<h3>Will taking part in this study require me to change anything about
+how I take my medication?</h3>
+<p>No. It is very important that you do not change anything about how
+you take your medication because of this study. You must not make any
+changes to how you take your medication unless advised by your
+doctor.</p>
+<p> </p>
+</div>
+<div id="when-will-i-need-to-do-all-these-tasks-if-i-agree-to-take-part"
+class="section level3">
+<h3>When will I need to do all these tasks if I agree to take part?</h3>
+<p>The tasks in this study will be arranged at times that suit you.
+There will need to be 1 week when you are able to use the bedside sensor
+continuously. It is no problem to take the bedside sensor with you to
+another location if you need to travel during this time.</p>
+<p>After you have read this information sheet, and if you decide that
+the study is something you would still be interested in, we will have a
+short conversation (in person, by phone, MS Teams or email) to ensure
+that you are eligible to participate. This conversation is confidential
+and the information you give us at this time will not be recorded. If
+you meet the inclusion criteria, we will then send you information on
+what is involved and give you time to read this and to ask questions.
+Next we will ask you to meet again (in person or online, your choice) to
+give written consent to participate. Then we will enrol you into the
+study and arrange a 1 week study window that suits you to participate,
+and send you the sensors with instructions on their use. You will have
+the names and contact details of the researchers who you can contact at
+any time during the study, should you have any questions.</p>
+<p>To summarise, over the 1 week of the study we will (i) record
+questionnaire data at the beginning, (ii) continuously record daily
+movement data using the wrist worn sensors, and the bedside sensor, and
+(iii) measure the times that you take your medication every day.</p>
+<p> </p>
+</div>
+<div id="can-the-sensors-record-images" class="section level3">
+<h3>Can the sensors record images?</h3>
+<p>No, the sensors only measure movement in space, none of them can
+acquire images.</p>
+<p> </p>
+</div>
+<div id="can-the-sensors-record-what-i-am-saying-or-other-sounds"
+class="section level3">
+<h3>Can the sensors record what I am saying or other sounds?</h3>
+<p>No, the sensors record noise levels in decibels, they can’t identify
+sounds or record speech.</p>
+<p> </p>
+</div>
+<div id="can-the-sensors-identify-my-location" class="section level3">
+<h3>Can the sensors identify my location?</h3>
+<p>No, none of our sensor have GPS or capacity to identify or record
+their location.</p>
+<p> </p>
+</div>
+<div id="can-the-bedside-radar-sensors-identify-what-i-am-doing"
+class="section level3">
+<h3>Can the bedside radar sensors identify what I am doing?</h3>
+<p>The sensors record data on movement but it is not possible to
+identify what someone is doing other than whether they are awake or not.
+We apply algorithms to the movement data at each timepoint to classify
+whether the person is asleep or awake – it is categorical information,
+either awake or asleep, nothing else. The data cannot be used to detect
+sexual or any other activity nor would we ever attempt to detect
+anything from the movement data other than the classification of being
+awake or asleep.</p>
+<p> </p>
+</div>
+<div id="can-the-bedside-radar-sensor-record-data-from-my-partner"
+class="section level3">
+<h3>Can the bedside radar sensor record data from my partner?</h3>
+<p>The sensors will only record data from you and not your partner (as
+long as you are the person closest to the sensor). Your participation in
+this study does affect your partner as we will record light, sound and
+temperature data in their bedroom, and we ask you to make sure anyone
+sharing your bedroom is happy for you to participate.</p>
+<p> </p>
+</div>
+<div id="are-there-any-benefits-to-me-if-i-take-part-in-the-study"
+class="section level3">
+<h3>Are there any benefits to me if I take part in the study?</h3>
+<p>Medical advances depend on the goodwill of volunteers that
+participate in research studies, and we believe that you will benefit
+from knowing you are making a valuable contribution to finding ways to
+help people with epilepsy. We are very grateful to everyone that
+participates in our research.</p>
+<p>You will receive data from the radar sensors that show how your own
+sleep patterns and medication timing vary over the week of the study.
+This will benefit you by helping you to understand more about how you
+sleep. We will give you this data for your own interest at the end of
+the study, but we are not medical doctors and we won’t be able to help
+you understand it.</p>
+<p>You will receive a One4All voucher (€20) to thank you for your
+participation.</p>
+<p> </p>
+</div>
+<div id="what-if-you-find-any-problems-with-my-sleep"
+class="section level3">
+<h3>What if you find any problems with my sleep?</h3>
+<p>There is a possibility that the tests we carry out identify that your
+sleep patterns are not what we expect to see in a healthy person. If
+this happens, we will let you know and we will give you copies of the
+data we collected. We are not medical doctors, so we will not be able to
+give you any advice but we will recommend that you discuss our findings
+with your GP.</p>
+<p> </p>
+</div>
+<div
+id="are-there-any-risks-to-me-or-others-if-i-take-part-in-the-study"
+class="section level3">
+<h3>Are there any risks to me or others if I take part in the
+study?</h3>
+<p>We have taken great care to identify and address any potential safety
+concerns, and we do not consider that taking part presents a risk to the
+participants but we do ask you to pay attention to the following sources
+of risk. Remember if you are unsure about anything, please feel free to
+contact our research team at <a href="mailto:TimeAlign@mu.ie"
+class="email">TimeAlign@mu.ie</a></p>
+<ol style="list-style-type: decimal">
+<li><p>There is a small possibility that you might develop skin
+irritation from the wrist worn strap and we will ask you to be vigilant
+to this, and to remove the strap immediately and withdraw from the study
+if signs of irritation are detected. All the items we use are
+medical-grade and we do not anticipate skin irritation to be a serious
+risk.</p></li>
+<li><p>There is a chance that the cables and wires of the sensors could
+be a trip hazard and we ask you to take care when moving near them and
+to make sure that all ends are tucked away.</p></li>
+</ol>
+<p> </p>
+</div>
+<div
+id="what-identifiable-information-about-me-will-be-used-as-part-of-this-study"
+class="section level3">
+<h3>What identifiable information about me will be used as part of this
+study?</h3>
+<p>With your consent, when we enrol you in the study, we will record
+your name, address and contact details (email and phone number). We will
+use your contact details to contact you about the research study, and
+not for any other reason. This data that can identify is highly
+confidential and will be destroyed when you have completed the
+study.</p>
+<p>As soon as you have enrolled in the study, you will be assigned a
+unique study ID code - this is called pseudonymisation. Any information
+we gather from that point (sensor data and questionnaire data) will be
+associated with the ID code and not with your name or contact details.
+This is not only for electronically stored data. For example,
+questionnaires will be labelled with your unique study IDs and not your
+name. Only the authorised research team at Maynooth University will have
+access to the ‘key’ that links your name to your ID code, and this
+information will be stored on an encrypted file on a password protected
+computer at Maynooth University. Neither your name nor ID code will be
+used when reporting the results of this research for publication or
+presentation; your contribution will be entirely anonymous. In this way,
+even the researchers working directly with your data will not know which
+participant it comes from; this link can only be made by retrieving the
+key.</p>
+<p>The only reason we have a key at all is so that we can contact you to
+collect sensors and follow up with results, and we will destroy the key
+and all your contact information as soon as possible. This will be when
+you have completed the study or at the end of TimeAlign (December 2028),
+whichever comes first.</p>
+<p> </p>
+</div>
+<div id="what-other-data-will-be-collected-about-me-during-the-study"
+class="section level3">
+<h3>What other data will be collected about me during the study?</h3>
+<p>There are three types of data in this study (i) personal,
+identifiable data, (ii) personal data, (iii) anonymised data.</p>
+<p>The personal, identifiable information that we will collect are your
+name, address and contact details (phone number and email address).
+These data can be used to identify you and are highly confidential. They
+will never be written on any of your research data items such as
+questionnaires or samples or sensor results. They will be linked to your
+research data via your study ID number and kept in a locked office or
+secure network that is separate to the research data stores. This means
+that even the researchers will not be able to tell the identify of the
+participants from the research data they are working on. We will delete
+your identifiable data as soon as the study is over.</p>
+<p>The research data that we collect about you includes personal
+information such as data on sleep, sensor data, lifestyle and health,
+age and sex, but these data are not unique to you and cannot be used to
+identify you without access to the ID code key. These data are
+pseudonymised until the end of the study (or Dec 2028 whichever is
+first) at which point all identifiable data are deleted and all personal
+data are anonymised. The personal research data will be identified only
+by an ID number and will be stored in a secure location on the MU
+server. Pseudonymised data will not be shared with anyone outside the
+research team.</p>
+<p>Anonymised data means that all connections to your identity have been
+irretrievably destroyed and there is no way that anyone (not even the
+researchers) can ever find out that information came from you. We ask
+your consent to retain this anonymous information indefinitely and to
+share it with other researchers via scientific repositories.
+Repositories are public databases that can be accessed by anyone and are
+very important for progressing science and preventing other scientists
+repeating work that has already been done. Releasing our research data
+into the public domain like this means that science will benefit for
+many years after our project has finished, and that the experiments do
+not have to be repeated.</p>
+<p> </p>
+</div>
+<div
+id="will-any-of-my-data-be-shared-with-anyone-outside-maynooth-university"
+class="section level3">
+<h3>Will any of my data be shared with anyone outside Maynooth
+University?</h3>
+<p>Some of your pseudonymised (not your identifiable information)
+personal information (date of birth, sex and sensor data) will be shared
+with a data service provider (VitalThings). This company supplies the
+sensors that we use and they are responsible for the transmission of
+data from the sensors to a cloud based platform that they maintain, and
+where the data are stored until the researchers at Maynooth University
+can download it. These data are identified by a study ID and can never
+be used to infer your identity. They will be made completely anonymous
+by Maynooth University researchers once the data have been
+downloaded.</p>
+<p>A data processing agreement has been signed between Maynooth
+University and VitalThings that will ensure that they maintain high
+standards of data security and governance and that they are GDPR
+compliant. This method of temporary data storage in the cloud is the
+most efficient way that we can acquire and store large amounts of sensor
+data. VitalThings will never have access to your name, address or
+contact information. They require access to your age and sex in order to
+calculate your sleep information. We will also store these anonymised
+data indefinitely in Maynooth University and in data repositories so
+that they can be used in future research and/or for teaching purposes
+(for example, student projects).</p>
+<p>We will share your pseudonymised (not your identifiable information)
+personal information (questionnaire and diary data) with a data
+collection platform provider (onlinesurveys.ac.uk). This company
+administers the platform where you complete your questionnaires online.
+Onlinesurveys.ac host the questionnaires and store the data until the
+researchers at Maynooth University can download it. These data are
+identified by a study ID and can never be used to infer your identity.
+They will be made completely anonymous by Maynooth University
+researchers once the data have been downloaded.</p>
+<p> </p>
+</div>
+<div id="what-happens-to-my-data-if-i-decide-to-withdraw"
+class="section level3">
+<h3>What happens to my data if I decide to withdraw?</h3>
+<p>If you decide to withdraw from the study, then all data will be
+destroyed; nothing will be retained for anonymisation in this case. You
+will be completely removed from the study. If you withdraw we will
+ensure that our third party processor, VitalThings deletes your
+pseudonymised data from the sensors, sex and date of birth data. If you
+complete the study, your data will be anonymised and it will not be
+possible to withdraw from the study after this point.</p>
+<p> </p>
+</div>
+<div
+id="will-my-personal-data-andor-sensor-data-be-used-in-future-studies"
+class="section level3">
+<h3>Will my personal data and/or sensor data be used in future
+studies?</h3>
+<p>The data we collect will be anonymised once the sensors and
+questionnaires have been returned, so it will not be possible for
+anyone, including the research team to identify the participants from
+the datasets. With your consent, we will retain these anonymous datasets
+indefinitely. These datasets may be used in teaching or research.</p>
+<p> </p>
+</div>
+<div id="will-i-have-access-to-the-data-generated-by-future-studies"
+class="section level3">
+<h3>Will I have access to the data generated by future studies?</h3>
+<p>No. Following completion of the study or withdrawal from the study,
+your identifiable personal information including your name, address and
+contact details will be destroyed. All other data (sensor and
+questionnaire data) will then be anonymised (it will no longer be linked
+back to you), and it will not be possible for us or anyone to identify
+you. For this reason, we cannot return any of your results after
+anonymization and you will not be able to withdraw, request access, or
+to make any amendments after the data are anonymised. This anonymised
+data will be held in Maynooth University and made available in public
+repositories for indefinite open access.</p>
+<p> </p>
+</div>
+<div
+id="who-will-access-my-identifiable-personal-data-as-part-of-this-study"
+class="section level3">
+<h3>Who will access my identifiable personal data as part of this
+study?</h3>
+<p>Only the authorised researchers named above, working in the research
+team at Maynooth University will have access to your identifiable
+personal data including your name, address, and contact details. All
+other data (sensor data, age, biological sex, clinical information and
+sleep data) are only identifiable by your unique study ID. We will never
+label your questionnaires or sensor data with your name or contact
+details. VitalThings and researchers at other universities cannot access
+your identifiable information. Only the research team at MU can ever
+find out your identify, and this is only for the purposes of contacting
+you about the study. As soon as the study is completed all your
+identifiable information will be destroyed and there is no way that you
+can ever be linked to study data again.</p>
+<p> </p>
+</div>
+<div id="how-will-my-privacy-be-protected" class="section level3">
+<h3>How will my privacy be protected?</h3>
+<p>Your personal information will be kept entirely confidential, and we
+will exercise our duties in handling your personal data as per the
+General Data Protection Regulation (GDPR). Protecting your privacy is
+extremely important to all the research team members at Maynooth
+University. Personal Identifiers, such as your name or email are never
+used to label your questionnaires or sensor data. All data will be
+stored on password protected files on a secure network in Maynooth
+University. No one outside of the research team in Maynooth University
+will have access to your name or contact information and all other data
+will be labelled with your unique study ID.</p>
+<p>Although all measures will be taken to protect your privacy, there is
+a remote risk that a connection to your contact details could be made,
+e.g., through unauthorised access to servers of premises at Maynooth
+University. To minimise this risk, any files containing these data are
+password protected and have restricted access, or are in locked cabinets
+in locked offices. Any attempt to identify you in this manner would be a
+legal breach against the permitted use of the research data.</p>
+<p>When you have returned the sensors and questionnaires, and the study
+is complete, your contact details will be incinerated in the case of
+written records, and electronic data will be reformatted or overwritten
+by the research team at Maynooth University and all data will be
+anonymous.</p>
+<p> </p>
+</div>
+<div id="what-is-the-lawful-basis-to-use-my-personal-data"
+class="section level3">
+<h3>What is the lawful basis to use my personal data?</h3>
+<p>As part of the study your personal data will only be used for
+scientific research which is in the public interests (Article 6 (e) and
+Article 9( 2) (j) of General Data Protection Regulation (GDPR)).</p>
+<p> </p>
+</div>
+<div id="what-are-my-rights" class="section level3">
+<h3>What are my rights?</h3>
+<p>Under the GDPR, you are entitled to:</p>
+<ul>
+<li>The right to access to your data and receive a copy of it.<br />
+</li>
+<li>The right to restrict or object to processing of your data.<br />
+</li>
+<li>The right to object to any further processing of the information we
+hold about you (except where it is de-identified).<br />
+</li>
+<li>The right to have inaccurate information about you corrected or
+deleted.<br />
+</li>
+<li>The right to receive your data in a portable format and to have it
+transferred to another data controller.<br />
+</li>
+<li>The right to request deletion of your data.</li>
+</ul>
+<p>These rights to access to your data are forfeit in this study by the
+complete anonymisation of the data. Complete anonymisation is to protect
+the privacy and data security of the participants, but it also means
+that it is impossible for you to access your data for any reason. We
+will not record the identity of the participants that provided any
+specific item of data, so we will not be able to give you access to your
+data or to make any amendments.</p>
+<p>It must be recognized that, in some circumstances, confidentiality of
+research data and records may be overridden by courts in the event of
+litigation or in the course of investigation by lawful authority. In
+such circumstances the University will take all reasonable steps within
+law to ensure that confidentiality is maintained to the greatest
+possible extent.</p>
+<p> </p>
+</div>
+<div id="will-it-cost-me-anything-if-i-agree-to-take-part"
+class="section level3">
+<h3>Will it cost me anything if I agree to take part?</h3>
+<p>Other than the cost of your time, there are no costs to you
+personally by participating in this research study.</p>
+<p> </p>
+</div>
+<div id="who-is-funding-the-study" class="section level3">
+<h3>Who is funding the study?</h3>
+<p>This project is funded by FutureNeuro2</p>
+<p> </p>
+</div>
+<div id="what-happens-if-i-wish-to-make-a-complaint"
+class="section level3">
+<h3>What happens if I wish to make a complaint?</h3>
+<p>If you have concerns or questions about any aspect of the study or if
+you wish to make a complaint, please speak to the researcher you are
+working with or contact the research team (<a
+href="mailto:TimeAlign@mu.ie" class="email">TimeAlign@mu.ie</a>) who
+will do their best to assist you. If they are unable to answer your
+question, please contact the Secretary of the Maynooth University Ethics
+Committee at <a href="mailto:research.ethics@mu.ie"
+class="email">research.ethics@mu.ie</a> or +353 (0)1 708 6019. Please be
+assured that your concerns will be dealt with in a sensitive manner.</p>
+<p> </p>
+</div>
+<div id="will-i-be-contacted-again" class="section level3">
+<h3>Will I be contacted again?</h3>
+<p>We will not contact you again after all data, equipment and sensors
+have been returned at which point we will destroy your name, address and
+contact details.</p>
+<p> </p>
+</div>
+<div id="who-has-approved-this-study" class="section level3">
+<h3>Who has approved this study?</h3>
+<p>This study has been reviewed and received ethical approval from the
+Biomedical and Life Sciences Research Ethics Sub-Committee (BSRESC) of
+Maynooth University on XXXXX. If you would like more information about
+the ethics committee’s approval of this study, please contact <a
+href="mailto:research.ethics@mu.ie"
+class="email">research.ethics@mu.ie</a>.</p>
+<p> </p>
+</div>
+<div id="where-can-i-get-further-information" class="section level3">
+<h3>Where can I get further information?</h3>
+<p>You can get further information from our research team</p>
+<p>Family Genomics Research Team, Department of Biology, Maynooth
+University, Co. Kildare (<a href="mailto:familysleeps@mu.ie"
+class="email">familysleeps@mu.ie</a>)</p>
+<p>The data controllers for this study are the Family Genomics Research
+Team in Maynooth University.</p>
+<p>The Data Controller for this research project is Maynooth University,
+Maynooth, Co. Kildare. Maynooth University Data Protection officer can
+be contacted at Humanity House, Room 17, <a
+href="mailto:dataprotection@mu.ie"
+class="email">dataprotection@mu.ie</a>. Maynooth University Data Privacy
+policies can be found at <a
+href="https://www.maynoothuniversity.ie/data-protection"
+class="uri">https://www.maynoothuniversity.ie/data-protection</a>.</p>
+</div>
+</div>
+
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open');
+  });
+});
+</script>
+
+<!-- code folding -->
+
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>
