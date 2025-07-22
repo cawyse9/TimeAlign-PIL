@@ -65,8 +65,8 @@ Co. Kildare.
 TimeAlign@mu.ie  
 
 &nbsp;  
-<center>  
-![](images/team.jpg)
-</center> 
 
+```{r, echo=FALSE, out.width="50%", fig.align='left'}
+knitr::include_graphics("images/team.jpg")
+```
 
