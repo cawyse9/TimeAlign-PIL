@@ -8,12 +8,8 @@ output:
     
 navbar:
   left:
-    - text: "Welcome to TimeAlign"
-      href: index.html
-    - text: "Team"
-      href: team.html
     - text: "Study Information"
-      href: PIL.html
+      href: PIL_pilot.html
     - text: "Consent Form"
       href: consent.html
     - text: "Sensors"

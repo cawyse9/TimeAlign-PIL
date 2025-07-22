@@ -5,7 +5,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 
 ```{r logo,fig.align='center', echo=FALSE}
-knitr::include_graphics("images/fn_mu_ time_align.jpg")
+knitr::include_graphics("images/fn_mu_timealign_jpg.jpg")
 ```
 
 <br><br> <br><!-- Add two line breaks -->
@@ -15,7 +15,7 @@ knitr::include_graphics("images/fn_mu_ time_align.jpg")
 &nbsp;   
 
 
-#  Wrist-Worn and Bedside Sensors Information
+##  Wrist-Worn and Bedside Sensors Information
 
 
 
@@ -23,7 +23,7 @@ Thank you for participating in our research study.  This information sheet will 
 
 &nbsp;  
 
-####  What is in the sensor kit?  
+###  What is in the sensor kit?  
 You will be given a kit that will contain the following:   
 
 * Wrist straps containing sensors 
@@ -35,15 +35,14 @@ You will be given a kit that will contain the following:
 
 
 <center>  
-![](images/axivity_somnofy.svg)  
+![](images/all_sensors.jpg)  
 </center>  
 
 <br>
 
 
-####  What you need to do to fit the wrist sensor  
-1. Fit the wrist worn sensor
-2. Either the left or right wrist can be used, but you must not change this during the study
+###  What you need to do to fit the wrist sensor  
+1. You can wear the sensor on either the left or right wrist, but you must not change this during the study
 3.	Please remove the sensor for bathing, showering or swimming but keep it on at all other times including at night
 4.	Please try to keep the area around the wrist strap clean and dry
 5.	Please monitor your wrist for any signs of skin irritation.  If this happens, please remove and contact us
@@ -51,14 +50,14 @@ You will be given a kit that will contain the following:
 
 &nbsp;  
 
-####  What you need to do to fit bedside sensor  
+###  What you need to do to fit bedside sensor  
 
 1.	Place the sensor on a table next to the bed. Please ensure the sensor is approximately 40cm from the bed if possible. Please see below for safety information when fitting the sensor.  
 2.	Plug in the USB plug and connect to the sensor  
 3.	The sensor will record automatically; you do not need to do anything except ensure that it remains plugged in for the duration of the study.  If the sensor is accidently unplugged, then please try to plug it in as soon as you can to avoid data loss  
 4.	There is no way that you can tell if the sensor is working, but we will contact you by email if it is not transmitting data to us  
 
-Your safety is very important to us. When fitting the sensors please ensure that you take the following precautions:   
+Your safety is very important to us. When fitting the bedside sensor please ensure that you take the following precautions:   
 
 * try to plug the sensor in as close to the wall socket as possible, while still within appropriate range of the bed  
 * run the cord/wire along the wall where possible 
@@ -67,20 +66,28 @@ Your safety is very important to us. When fitting the sensors please ensure that
 
 &nbsp;  
 
-####  What happens next?  
-When we receive the equipment back at our laboratory, we will analyse your results.  
 
-Please be aware that this is a research study and we do not yet fully understand how the data will relate to health and wellbeing.  
+###  What you need to do to use the medication timing sensor  
 
-If you have any problems or questions, you can always contact the research team:  
-timealign.ie  
+1.	Keep the sensors in your pill box/bag or where your store your medicaion,
+2.  When you take your medication, please press firmly on the button, and check that the red light flashes.  This means the time of medication has been logged.  
+3.  The green light will flash continuously to indicate that the device is working.
+4.  If you forget to press the button, please do not press it later.  Only press the button at the times that you take your medication.
+5.  If you have more than one place that you take your medication, we can give you extra sensors.
+
 
 &nbsp;  
 
-####  Summary  
+###  What happens next?  
+When we receive the equipment back at our laboratory, we will analyse your results.  Please be aware that this is a research study and we do not yet fully understand how the data will relate to health and wellbeing.  If you have any problems or questions, you can always contact the research team on timealign@mu.ie  
+
+&nbsp;  
+
+###  Summary  
 
 * Fit the wrist sensor  
 * Fit the bedroom sensor  
+* Place the medication sensor with your medication and press the button every time you take a dose
 * After 1 week post all equipment back to us in the post-paid envelope.  We will send you an email reminder after one week, when it is time to end the study.   
 
 &nbsp;  

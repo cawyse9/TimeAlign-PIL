@@ -7,7 +7,7 @@ knitr::opts_chunk$set(echo = TRUE)
 &nbsp;  
 
 ```{r logo, echo=FALSE, fig.align='center'}
-knitr::include_graphics("images/Questionnaire_header_long.jpg")
+knitr::include_graphics("images/fn_mu_timealign_jpg.jpg")
 ```
 <br><br> <!-- Add two line breaks -->
 
@@ -16,16 +16,16 @@ knitr::include_graphics("images/Questionnaire_header_long.jpg")
 
 &nbsp;  
 
-#### Research Team:  
-Dr Lorna M. Lopez, Maynooth University (Lead Investigator)  
-Professor Andrew Coogan, Maynooth University (Lead Investigator)  
-Dr Cathy Wyse, Maynooth University (Senior Research Fellow)  
-Mr Sean Farrell, Maynooth University (Research Assistant)  
+### Research Team:  
+
+Professor Lorna M. Lopez, Maynooth University  
+Dr Cathy Wyse, Maynooth University  
+Dr Cristina Ruedell-Reschke, RCSI
 
 &nbsp;  
 
-#### Study Contact/Advisor 	
-Ambient-BD Research Team,  
+### Study Contact/Advisor 	
+TimeAlign Research Team,  
 Department of Biology,  
 Callan Building,  
 Maynooth University,  
@@ -33,13 +33,12 @@ Maynooth,
 Co. Kildare
 &nbsp;  
 
-Email:  Ambientbd@mu.ie
-Phone:  087 199 8589
-Web:    https://www.familygenomics.maynoothuniversity.ie/chronobiologyofmentalhealth/ambient-bd
+Email:  TimeAlign@mu.ie
+Web:    https://www.familygenomics.maynoothuniversity.ie
 
 &nbsp;  
 
-#### Maynooth University Ethics Committee
+### Maynooth University Ethics Committee
 Email		research.ethics@mu.ie 
 Phone		(01) 708 6019  
 The data processors for this study are the Family Genomics Research Team in Maynooth University.  
@@ -48,8 +47,26 @@ The Data Controller for this research project is Maynooth University, Maynooth, 
 Maynooth University Data Protection officer can be contacted at 17 Rye Hall Extension, Maynooth University, Co.Kildare  
 
 Maynooth University Data Privacy policies can be found at https://www.maynoothuniversity.ie/data-protection
+&nbsp; &nbsp;  
+&nbsp; &nbsp;
 
+### Please contact the team anytime if you would like more information about our research
+&nbsp;  
+Professor Lorna M. Lopez, Maynooth University  
+Dr Cathy Wyse, Maynooth University  
+Dr Cristina Ruedell-Reschke, RCSI
 
+ 
 
+TimeAlign Research Team,  
+Department of Biology,  
+Maynooth University,  
+Co. Kildare.  
+TimeAlign@mu.ie  
+
+&nbsp;  
+<center>  
+![](images/team.jpg)
+</center> 
 
 

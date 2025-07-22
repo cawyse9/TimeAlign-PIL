@@ -5,51 +5,33 @@ knitr::opts_chunk$set(echo = TRUE)
 
 
 ```{r logo,fig.align='center', echo=FALSE}
-knitr::include_graphics("images/Questionnaire_header_long.jpg")
+knitr::include_graphics("images/fn_mu_timealign_jpg.jpg")
 ```
 
 <br><br> <br><!-- Add two line breaks -->
 &nbsp;  
+
+#  TimeAlign - Research Team  
+
 &nbsp;  
 
-#  Ambient-BD - Maynooth University Research Team  
-
-&nbsp;  
-&nbsp;  
-&nbsp;  
-&nbsp;  
-
-* Professor Lorna M. Lopez, Department of Biology, Maynooth University (Lead Investigator)  
-* Professor Andrew Coogan, Department of Psychology, Maynooth University (Lead Investigator)  
-* Dr Cathy Wyse, Department of Biology, Maynooth University (Senior Research Fellow)  
-* Ms Emma Ryan, Department of Biology, Maynooth University (Research Assistant)   
-* Mr Benji Kirke, Department of Biology, Maynooth University (Research Assistant)   
+* Professor Lorna M. Lopez, Department of Biology, Maynooth University 
+* Dr Cathy Wyse, Department of Biology, Maynooth University 
+* Dr Cristina Ruedell-Reschke, RCSI
 
 <br>
-Please visit the Ambient-BD project website to learn more about the rest of the Ambient-BD team members 
-https://www.ambientbd.com/
-
-&nbsp;  
-&nbsp; 
-&nbsp;  
 &nbsp;  
 <center>  
-![](images/team.svg)
+![](images/team.jpg)
 </center> 
 &nbsp;  
-&nbsp; 
-&nbsp;  
-&nbsp;  
-
-
-&nbsp;  
-&nbsp; &nbsp;  
 &nbsp; 
 
 ##### Please contact the team anytime if you would like more information about our research
 
-Ambient-BD Research Team,  
+TimeAlign Research Team,  
 Department of Biology,  
 Maynooth University,  
-Co. Kildare  
-ambientbd@mu.ie  
+Co. Kildare.  
+
+TimeAlign@mu.ie  

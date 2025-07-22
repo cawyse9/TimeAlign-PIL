@@ -10,16 +10,13 @@ knitr::include_graphics("images/fn_mu_timealign_jpg.jpg")
 
 <br><br> <br><!-- Add two line breaks -->
 
-#  Research Study Information Sheets
+##  Research Study Information Sheets - Pilot Study
 &nbsp;  
 &nbsp;  
 
-##  Study Title: Ambient and Passive Monitoring of Circadian Timing of Sleep and Medication in People with Epilepsy (TimeAlign)
-
-&nbsp;  
 
 
-#### Research Team:   
+### Research Team:   
 Prof Lorna M. Lopez, Maynooth University  
 Dr Cathy Wyse, Maynooth University  
 Mr Jake Kennedy, Maynooth University  
@@ -32,7 +29,7 @@ You are invited to participate in this research study which aims to investigate 
 
 &nbsp;  
 
-####  Why are we doing this research study? 
+###  Why are we doing this research study? 
 Circadian rhythms are changes in physiology and behaviour that follow a 24-hour cycle.  For example, the daily rhythm in body temperature, alertness and the sleep wake cycle are all examples of circadian rhythms.  In fact, almost every cell in the human body is regulated by a circadian clock, and this does not depend on the light dark cycle or the timing of food or exercise.  Circadian timing has been “hard-wired” into our physiology by evolution so that humans have 24h rhythms by default.  
 
 It has been known for centuries that the occurrence of seizures in some people with epilepsy follow daily or monthly patterns.  For example, some people only have seizures at night, or at a particular time of day.  It is possible that circadian clocks in the brain contribute to these patterns.  
@@ -46,42 +43,39 @@ Many people with epilepsy have infrequent seizures, so that long periods of moni
 &nbsp;  
 
 
-#### Why am I being asked to take part in this research study? 
-We have asked you to take part because you are a person with epilepsy that is taking daily anti-epileptic drugs.
+### Why am I being asked to take part in this research study? 
+We have asked you to take part because you are a person with epilepsy that is taking daily anti-epileptic drugs.  
 To participate you must:
 
 * Have been diagnosed with epilepsy by a neurologist  
-* Be currently taking anti-seizure medication at least once per day with no plans for this to be discontinued in the next 12 months  
-* Be at least 18 years old and less than 65 years old  
-* Not have any sleep problems unrelated to epilepsy (eg snoring or sleep apnoea)  
+* Be currently taking anti-seizure medication at least once per day  
+* Be at least 18 years old 
 * Be willing and able to consent to this study  
 * Have access to email and the internet  
 * You and anyone sharing your bedroom must be happy to have radar sensors fitted at the bedside  
 
 You can not participate if you:
 
-* Drink more than 11 (women) or 17 (men) alcoholic drinks per week  
-* Have any chronic medical condition or disability other than epilepsy  
-* Take any prescription or over the counter medication that could affect sleep other than anti-epileptic drugs  
-* Use any recreational drug  
-* Are pregnant  
-* Are a shiftworker  
+* Are pregnant   
 * Have any infectious disease  
 * Have allergies or skin condition that might affect your ability to have sensors attached to your skin, or to wear a wrist watch
 
 &nbsp;  
 
 
-#### Do I have to take part? 
+### Do I have to take part? 
 It is important to know that you do not have to take part in this study if you do not wish to. You can change your mind about participating in this study at any time, even after the study has begun. If you decide that you do not want to participate, this will have no effect on your current or future participation in any other research studies. You do not have to provide a reason for deciding not to participate or changing your mind. If you wish to opt out at any point, please contact the research team (Study email: TimeAlign@mu.ie), and we will organise this for you. 
 
-What happens if I change my mind about participating during the study?
+&nbsp;  
+
+
+### What happens if I change my mind about participating during the study?
 You can withdraw at any time and without giving a reason.  If you decide to do so, we will immediately remove all of your data from the study, including your sensor, sleep and questionnaire data.  Electronic copies of data will be overwritten, and hard copies will be destroyed by incineration.  
 
 &nbsp;  
 
 
-#### How will the study be carried out? 
+### How will the study be carried out? 
 The studies will be carried out as you undergo your usual activities over 12 months, you will not be required to come to Maynooth University at any point.  We will give you everything you need to set up the sensors yourself.  We will always give you instructions and all materials and equipment needed to complete the study and we will always be available to answer any questions you have about the study.  
 &nbsp;  
 
@@ -89,13 +83,11 @@ You will be asked to do the following tasks:
 
 &nbsp;  
 
-1.	**Wear a wrist-worn activity monitor** (like a Fitbit) at all times (day and night) for 3 weeks on two occasions.  You will need to remove the monitor for showering or swimming, and put it back on as soon as possible afterwards.  
-
-    The device will monitor movement and light exposure continuously throughout the day and night.  This will be worn for a total of 6 weeks during the 12 month study.  
+1.	**Wear a wrist-worn activity monitor** (like a Fitbit) at all times (day and night) for 1 week.  You will need to remove the monitor for showering or swimming, and put it back on as soon as possible afterwards.  The device will monitor movement and light exposure continuously throughout the day and night.   
     
 &nbsp;  
 
-2.	**Fit a bedside sensor** that monitors movement and environment in your bedroom for 12 months (see image below). The sensor records the following information:  
+2.	**Fit a bedside sensor** that monitors movement and environment in your bedroom for 1 week (see image below). The sensor records the following information:  
 
     * Movement
     * Room temperature
@@ -110,93 +102,86 @@ You will be asked to do the following tasks:
     
 &nbsp;  
 
-3.	**Complete some questionnaires** about your health, lifestyle and sleep.  The questionnaires will be completed at four time points during the 12-month study. Questionnaires will take approximately 10 minutes each to complete and there are 3 in total. You will need to keep a seizure diary for the 12 month study period.  
+3.	**Complete some questionnaires** about your health, lifestyle and sleep.  Questionnaires will take approximately 10 minutes each to complete and there are 3 in total. You will need to keep a seizure diary for 1 week.  
 &nbsp;  
 
 4.	**Keep a small sensor with your current pill box**, or where you keep your medication.  You need to press the button each time you take your medication which will record the times.  This device has no communication function, it can only record and store time data. 
 
-    We will ask you to return the device to us in prepaid envelopes every three months so that we can download the data.  We will send you a new device at these times.  We will keep in touch with you and remind you when it is time to swap devices.  
-    
-&nbsp;  
-
-5.	**Keep a seizure diary** that records the time of day and type of any seizures that you have during the 12 months.  We will send you a link for recording this information, or we will give you a book, whichever is easiest for you.  
+    We will ask you to return the device to us in prepaid envelopes so that we can download the data.  We will send you a new device at these times.  We will keep in touch with you and remind you when it is time to swap devices.  
 
 &nbsp;  
 
-6.	**Keep a sleep diary** – we will send you a link by text or email every morning where you can record how you slept.  This will take 1-2 minutes and soon becomes a habit.  
+5.	**Keep a sleep diary** – we will send you a link by text or email every morning where you can record how you slept.  This will take 1-2 minutes and soon becomes a habit.  
+
+&nbsp;  
+
+6.  **Give feedback** on your experience participating and help us to improve the study design based on your experience of having epilepsy.  
 
 &nbsp;  
 
 
-#### Will taking part in this study require me to change anything about how I take my medication?
+### Will taking part in this study require me to change anything about how I take my medication?
 No.  It is very important that you do not change anything about how you take your medication because of this study.  You must not make any changes to how you take your medication unless advised by your doctor.  
 
 &nbsp;  
 
 
-#### When will I need to do all these tasks if I agree to take part? 
-The tasks in this study will be arranged at times that suit you.  There will need to be 12 months where you are able to use the bedside sensor continuously.  It is no problem to take the bedside sensor with you to another location if you need to travel during this time.  During the 12 months you will need to have 2 separate 3-week periods when you will wear the wrist watch sensor.  You will fill in some questionnaire at the start of the study only.
+### When will I need to do all these tasks if I agree to take part? 
+The tasks in this study will be arranged at times that suit you.  There will need to be 1 week when you are able to use the bedside sensor continuously.  It is no problem to take the bedside sensor with you to another location if you need to travel during this time.  
 
-After you have read this information sheet, and if you decide that the study is something you would still be interested in, we will have a short conversation (in person, by phone, MS Teams or email) to ensure that you are eligible to participate.  This conversation is confidential and the information you give us at this time will not be recorded.  If you meet the inclusion criteria, we will then send you information on what is involved and give you time to read this and to ask questions.  Next we will ask you to meet again (in person or online, your choice) to give written consent to participate.  Then we will enrol you into the study and arrange a 12-month study window that suits you to participate, and send you the sensors with instructions on their use.   You will have the names and contact details of the researchers who you can contact at any time during the study, should you have any questions.  
+After you have read this information sheet, and if you decide that the study is something you would still be interested in, we will have a short conversation (in person, by phone, MS Teams or email) to ensure that you are eligible to participate.  This conversation is confidential and the information you give us at this time will not be recorded.  If you meet the inclusion criteria, we will then send you information on what is involved and give you time to read this and to ask questions.  Next we will ask you to meet again (in person or online, your choice) to give written consent to participate.  Then we will enrol you into the study and arrange a 1 week study window that suits you to participate, and send you the sensors with instructions on their use.   You will have the names and contact details of the researchers who you can contact at any time during the study, should you have any questions.  
 
-To summarise, over the 12 months we will (i) record questionnaire data at the beginning, (ii) continuously record daily movement data using the wrist worn sensors, and the bedside sensor, and (iii) measure the times that you take your medication every day.
+To summarise, over the 1 week of the study we will (i) record questionnaire data at the beginning, (ii) continuously record daily movement data using the wrist worn sensors, and the bedside sensor, and (iii) measure the times that you take your medication every day.
 
 &nbsp;  
 
 
-#### Can the sensors record images?
+### Can the sensors record images?
 No, the sensors only measure movement in space, none of them can acquire images.
 
 &nbsp;  
 
 
-#### Can the sensors record what I am saying or other sounds?
+### Can the sensors record what I am saying or other sounds?
 No, the sensors record noise levels in decibels, they can’t identify sounds or record speech.  
 
 &nbsp;  
 
 
-#### Can the sensors identify my location?
+### Can the sensors identify my location?
 No, none of our sensor have GPS or capacity to identify or record their location. 
 
 &nbsp;  
 
 
-#### Can the bedside radar sensors identify what I am doing?
+### Can the bedside radar sensors identify what I am doing?
 The sensors record data on movement but it is not possible to identify what someone is doing other than whether they are awake or not.  We apply algorithms to the movement data at each timepoint to classify whether the person is asleep or awake – it is categorical information, either awake or asleep, nothing else.  The data cannot be used to detect sexual or any other activity nor would we ever attempt to detect anything from the movement data other than the classification of being awake or asleep.
 
 &nbsp;  
 
 
-#### Can the bedside radar sensor record data from my partner?
+### Can the bedside radar sensor record data from my partner?
 The sensors will only record data from you and not your partner (as long as you are the person closest to the sensor).  Your participation in this study does affect your partner as we will record light, sound and temperature data in their bedroom, and we ask you to make sure anyone sharing your bedroom is happy for you to participate.
 
 &nbsp;  
 
 
-#### Are there any benefits to me if I take part in the study? 
+### Are there any benefits to me if I take part in the study? 
 Medical advances depend on the goodwill of volunteers that participate in research studies, and we believe that you will benefit from knowing you are making a valuable contribution to finding ways to help people with epilepsy.  We are very grateful to everyone that participates in our research.  
 
-You will receive data from the radar sensors that show how your own sleep patterns and seizures vary over 12 months.  This will benefit you by helping you to understand more about how you sleep over a long period of time.  We will give you this data for your own interest at the end of the study, but we are not medical doctors and we won’t be able to help you understand it.  
+You will receive data from the radar sensors that show how your own sleep patterns and medication timing vary over the week of the study.  This will benefit you by helping you to understand more about how you sleep.  We will give you this data for your own interest at the end of the study, but we are not medical doctors and we won’t be able to help you understand it.  
 
-You will receive a One4All voucher (Stage I  €20, Stage II €40 and Stage III €20 per month, €240 for complete study) to thank you for your participation.
+You will receive a One4All voucher (€20) to thank you for your participation.
+
+&nbsp;  
+
+### What if you find any problems with my sleep?
+There is a possibility that the tests we carry out identify that your sleep patterns are not what we expect to see in a healthy person.  If this happens, we will let you know and we will give you copies of the data we collected.   We are not medical doctors, so we will not be able to give you any advice but we will recommend that you discuss our findings with your GP.  
 
 &nbsp;  
 
 
-#### What if I already have problems with my sleep? 
-Our research requires participants to have healthy sleep so if you already have a sleep problem you will not be able to participate.  
-
-&nbsp;  
-
-
-#### What if you find any problems with my sleep?
-Even if you think you have normal sleep and enrol in this study, there is a possibility that the tests we carry out identify that your sleep patterns are not what we expect to see in a healthy person.  If this happens, we will let you know and we will give you copies of the data we collected.  You will not be allowed to continue to participate in the study at this point.  We are not medical doctors, so we will not be able to give you any advice but we will recommend that you discuss our findings with your GP.  
-
-&nbsp;  
-
-
-#### Are there any risks to me or others if I take part in the study? 	 
+### Are there any risks to me or others if I take part in the study? 	 
 We have taken great care to identify and address any potential safety concerns, and we do not consider that taking part presents a risk to the participants but we do ask you to pay attention to the following sources of risk.  Remember if you are unsure about anything, please feel free to contact our research team at TimeAlign@mu.ie  
 
 1.	There is a small possibility that you might develop skin irritation from the wrist worn strap 
@@ -207,17 +192,17 @@ We have taken great care to identify and address any potential safety concerns, 
 &nbsp;  
 
 
-#### What identifiable information about me will be used as part of this study? 
-With your consent, when we enrol you in the study, we will record your name, address and contact details (email and phone number). We will use your contact details to contact you about the research study, and not for any other reason.  This data that can identify is highly confidential and will be destroyed when you have completed the study or in December 2028, whichever comes first.
+### What identifiable information about me will be used as part of this study? 
+With your consent, when we enrol you in the study, we will record your name, address and contact details (email and phone number). We will use your contact details to contact you about the research study, and not for any other reason.  This data that can identify is highly confidential and will be destroyed when you have completed the study.
 
 As soon as you have enrolled in the study, you will be assigned a unique study ID code - this is called pseudonymisation. Any information we gather from that point (sensor data and questionnaire data) will be associated with the ID code and not with your name or contact details. This is not only for electronically stored data. For example, questionnaires will be labelled with your unique study IDs and not your name.  Only the authorised research team at Maynooth University will have access to the ‘key’ that links your name to your ID code, and this information will be stored on an encrypted file on a password protected computer at Maynooth University. Neither your name nor ID code will be used when reporting the results of this research for publication or presentation; your contribution will be entirely anonymous.  In this way, even the researchers working directly with your data will not know which participant it comes from; this link can only be made by retrieving the key.  
 
-The only reason we have a key at all is so that we can contact you to collect sensors and follow up with results, and we will destroy the key and all your contact information as soon as possible.  This will  be when you have completed the study, and the contact information of all participants will be destroyed in December 2028.
+The only reason we have a key at all is so that we can contact you to collect sensors and follow up with results, and we will destroy the key and all your contact information as soon as possible.  This will be when you have completed the study or at the end of TimeAlign (December 2028), whichever comes first.
 
 &nbsp;  
 
 
-#### What other data will be collected about me during the study? 
+### What other data will be collected about me during the study? 
 There are three types of data in this study (i) personal, identifiable data, (ii) personal data, (iii) anonymised data.  
 
 The personal, identifiable information that we will collect are your name, address and contact details (phone number and email address).  These data can be used to identify you and are highly confidential.  They will never be written on any of your research data items such as questionnaires or samples or sensor results.  They will be linked to your research data via your study ID number and kept in a locked office or secure network that is separate to the research data stores.  This means that even the researchers will not be able to tell the identify of the participants from the research data they are working on.  We will delete your identifiable data as soon as the study is over.  
@@ -229,7 +214,7 @@ Anonymised data means that all connections to your identity have been irretrieva
 &nbsp;  
 
 
-#### Will any of my data be shared with anyone outside Maynooth University?
+### Will any of my data be shared with anyone outside Maynooth University?
 Some of your pseudonymised (not your identifiable information) personal information (date of birth, sex and sensor data) will be shared with a data service provider (VitalThings).  This company supplies the sensors that we use and they are responsible for the transmission of data from the sensors to a cloud based platform that they maintain, and where the data are stored until the researchers at Maynooth University can download it.  These data are identified by a study ID and can never be used to infer your identity.  They will be made completely anonymous by Maynooth University researchers once the data have been downloaded. 
 
 A data processing agreement has been signed between Maynooth University and VitalThings that will ensure that they maintain high standards of data security and governance and that they are GDPR compliant.   This method of temporary data storage in the cloud is the most efficient way that we can acquire and store large amounts of sensor data.  VitalThings will never have access to your name, address or contact information. They require access to your age and sex in order to calculate your sleep information. We will also store these anonymised data indefinitely in Maynooth University and in data repositories so that they can be used in future research and/or for teaching purposes (for example, student projects). 
@@ -239,35 +224,35 @@ We will share your pseudonymised (not your identifiable information) personal in
 &nbsp;  
 
 
-#### What happens to my data if I decide to withdraw?
+### What happens to my data if I decide to withdraw?
 If you decide to withdraw from the study, then all data will be destroyed; nothing will be retained for anonymisation in this case.  You will be completely removed from the study.  If you withdraw we will ensure that our third party processor, VitalThings deletes your pseudonymised data from the sensors, sex and date of birth data.  If you complete the study, your data will be anonymised and it will not be possible to withdraw from the study after this point.
 
 
 &nbsp;  
 
 
-#### Will my personal data and/or sensor data be used in future studies?  
+### Will my personal data and/or sensor data be used in future studies?  
 The data we collect will be anonymised once the sensors and questionnaires have been returned, so it will not be possible for anyone, including the research team to identify the participants from the datasets. With your consent, we will retain these anonymous datasets indefinitely. These datasets may be used in teaching or research.  
 
 
 &nbsp;  
 
 
-#### Will I have access to the data generated by future studies?
+### Will I have access to the data generated by future studies?
 No.  Following completion of the study or withdrawal from the study, your identifiable personal information including your name, address and contact details will be destroyed. All other data (sensor and questionnaire data) will then be anonymised (it will no longer be linked back to you), and it will not be possible for us or anyone to identify you.  For this reason, we cannot return any of your results after anonymization and you will not be able to withdraw, request access, or to make any amendments after the data are anonymised.  This anonymised data will be held in Maynooth University and made available in public repositories for indefinite open access.
 
 &nbsp;  
 
 
 
-#### Who will access my identifiable personal data as part of this study? 
+### Who will access my identifiable personal data as part of this study? 
 Only the authorised researchers named above, working in the research team at Maynooth University will have access to your identifiable personal data including your name, address, and contact details.  All other data (sensor data, age, biological sex, clinical information and sleep data) are only identifiable by your unique study ID. We will never label your questionnaires or sensor data with your name or contact details.  VitalThings and researchers at other universities cannot access your identifiable information.  Only the research team at MU can ever find out your identify, and this is only for the purposes of contacting you about the study.  As soon as the study is completed all your identifiable information will be destroyed and there is no way that you can ever be linked to study data again.
 
 
 &nbsp;  
 
 
-#### How will my privacy be protected? 
+### How will my privacy be protected? 
 Your personal information will be kept entirely confidential, and we will exercise our duties in handling your personal data as per the General Data Protection Regulation (GDPR). Protecting your privacy is extremely important to all the research team members at Maynooth University. Personal Identifiers, such as your name or email are never used to label your questionnaires or sensor data. All data will be stored on password protected files on a secure network in Maynooth University. No one outside of the research team in Maynooth University will have access to your name or contact information and all other data will be labelled with your unique study ID.  
 
 Although all measures will be taken to protect your privacy, there is a remote risk that a connection to your contact details could be made, e.g., through unauthorised access to servers of premises at Maynooth University. To minimise this risk, any files containing these data are password protected and have restricted access, or are in locked cabinets in locked offices. Any attempt to identify you in this manner would be a legal breach against the permitted use of the research data.  
@@ -278,14 +263,14 @@ When you have returned the sensors and questionnaires, and the study is complete
 
 
 
-#### What is the lawful basis to use my personal data?  
+### What is the lawful basis to use my personal data?  
 As part of the study your personal data will only be used for scientific research which is in the public interests (Article 6 (e) and Article 9( 2) (j) of General Data Protection Regulation (GDPR)).  
 
 &nbsp;  
 
 
 
-#### What are my rights? 
+### What are my rights? 
 Under the GDPR, you are entitled to:  
 
 * The right to access to your data and receive a copy of it.  
@@ -303,42 +288,42 @@ It must be recognized that, in some circumstances, confidentiality of research d
 
 
 
-#### Will it cost me anything if I agree to take part? 
+### Will it cost me anything if I agree to take part? 
 Other than the cost of your time, there are no costs to you personally by participating in this research study. 
 
 &nbsp;  
 
 
 
-#### Who is funding the study? 
+### Who is funding the study? 
 This project is funded by FutureNeuro2 
 
 &nbsp;  
 
 
 
-#### What happens if I wish to make a complaint? 
+### What happens if I wish to make a complaint? 
 If you have concerns or questions about any aspect of the study or if you wish to make a complaint, please speak to the researcher you are working with or contact the research team (TimeAlign@mu.ie) who will do their best to assist you. If they are unable to answer your question, please contact the Secretary of the Maynooth University Ethics Committee at research.ethics@mu.ie or +353 (0)1 708 6019. Please be assured that your concerns will be dealt with in a sensitive manner. 
 
 &nbsp;  
 
 
 
-#### Will I be contacted again? 
+### Will I be contacted again? 
 We will not contact you again after all data, equipment and sensors have been returned at which point we will destroy your name, address and contact details. 
 
 
 &nbsp;  
 
 
-#### Who has approved this study?  
+### Who has approved this study?  
 This study has been reviewed and received ethical approval from the Biomedical and Life Sciences Research Ethics Sub-Committee (BSRESC) of Maynooth University on XXXXX. If you would like more information about the ethics committee’s approval of this study, please contact research.ethics@mu.ie. 
  
 &nbsp;  
 
 
 
-#### Where can I get further information? 
+### Where can I get further information? 
 You can get further information from our research team  
 
 Family Genomics Research Team, Department of Biology, Maynooth University, Co. Kildare (familysleeps@mu.ie)  
