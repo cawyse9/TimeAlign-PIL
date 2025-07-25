@@ -69,7 +69,7 @@ Your safety is very important to us. When fitting the bedside sensor please ensu
 
 ###  What you need to do to use the medication timing sensor  
 
-1.	Keep the sensors in your pill box/bag or where your store your medicaion,
+1.	Keep the sensor in your pill box/bag or where your store your medication,
 2.  When you take your medication, please press firmly on the button, and check that the red light flashes.  This means the time of medication has been logged.  
 3.  The green light will flash continuously to indicate that the device is working.
 4.  If you forget to press the button, please do not press it later.  Only press the button at the times that you take your medication.

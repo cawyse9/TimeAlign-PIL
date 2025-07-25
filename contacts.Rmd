@@ -19,8 +19,9 @@ knitr::include_graphics("images/fn_mu_timealign_jpg.jpg")
 ### Research Team:  
 
 Professor Lorna M. Lopez, Maynooth University  
+Mr Jake Kennedy, Maynooth University  
 Dr Cathy Wyse, Maynooth University  
-Dr Cristina Ruedell-Reschke, RCSI
+
 
 &nbsp;  
 
@@ -53,8 +54,9 @@ Maynooth University Data Privacy policies can be found at https://www.maynoothun
 ### Please contact the team anytime if you would like more information about our research
 &nbsp;  
 Professor Lorna M. Lopez, Maynooth University  
+Mr Jake Kennedy, Maynooth University
 Dr Cathy Wyse, Maynooth University  
-Dr Cristina Ruedell-Reschke, RCSI
+
 
  
 
@@ -67,6 +69,6 @@ TimeAlign@mu.ie
 &nbsp;  
 
 ```{r, echo=FALSE, out.width="50%", fig.align='left'}
-knitr::include_graphics("images/team.jpg")
+knitr::include_graphics("images/LL_JK_CW.svg")
 ```
 

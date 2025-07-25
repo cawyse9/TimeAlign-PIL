@@ -25,7 +25,7 @@ Mr Jake Kennedy, Maynooth University
 
 Thank you for your interest in our research study. Please read this information carefully and discuss it with your family if you wish. Take your time to read it and don’t feel under any pressure to decide right away. It is important for you to understand the study fully before you decide to participate or not. If anything is unclear to you, or if you have any questions at all about the study, please don’t hesitate to get in touch with us by email (TimeAlign@mu.ie). 
 
-You are invited to participate in this research study which aims to investigate sleep and circadian rhythms in people with epilepsy. 
+You are invited to participate in this research study which aims to investigate the timing of medication as well as sleep and circadian rhythms in people with epilepsy. 
 
 &nbsp;  
 
@@ -34,9 +34,10 @@ Circadian rhythms are changes in physiology and behaviour that follow a 24-hour 
 
 It has been known for centuries that the occurrence of seizures in some people with epilepsy follow daily or monthly patterns.  For example, some people only have seizures at night, or at a particular time of day.  It is possible that circadian clocks in the brain contribute to these patterns.  
 
-The overall aim of this project is to assess daily, weekly and monthly patterns in sleep and circadian timing in people with epilepsy, and to investigate if any of these patterns match the timing of seizures.  
+Medication is an important aspect of seizure control, and in TimeAlign, we will investigate if variations in the times of day that people with epilepsy take their medication is related to the timing of their seizures.
 
-Medication is an important aspect of seizure control, and we will also investigate if variations in the times that people with epilepsy take their medication is related to the timing of their seizures.
+The overall aim of this project is to assess daily patterns in sleep and circadian timing and the timing of medication in people with epilepsy, and to investigate if any of these patterns match the timing of seizures.  
+
 
 Many people with epilepsy have infrequent seizures, so that long periods of monitoring (several months) are required to capture patterns in their timing.   In this project, we will use advances in sensor technology to unobtrusively monitor the timing of sleep, medication and activity in order to  minimise the burden on the participants that are happy to participate in our research over long periods of time. 
 
@@ -102,7 +103,7 @@ You will be asked to do the following tasks:
     
 &nbsp;  
 
-3.	**Complete some questionnaires** about your health, lifestyle and sleep.  Questionnaires will take approximately 10 minutes each to complete and there are 3 in total. You will need to keep a seizure diary for 1 week.  
+3.	**Complete some questionnaires** about your health, lifestyle and sleep.  Questionnaires will take approximately 10 minutes each to complete and there are 3 in total. 
 &nbsp;  
 
 4.	**Keep a small sensor with your current pill box**, or where you keep your medication.  You need to press the button each time you take your medication which will record the times.  This device has no communication function, it can only record and store time data. 
@@ -184,8 +185,7 @@ There is a possibility that the tests we carry out identify that your sleep patt
 ### Are there any risks to me or others if I take part in the study? 	 
 We have taken great care to identify and address any potential safety concerns, and we do not consider that taking part presents a risk to the participants but we do ask you to pay attention to the following sources of risk.  Remember if you are unsure about anything, please feel free to contact our research team at TimeAlign@mu.ie  
 
-1.	There is a small possibility that you might develop skin irritation from the wrist worn strap 
- and we will ask you to be vigilant to this, and to remove the strap immediately and withdraw from the study if signs of irritation are detected.   All the items we use are medical-grade and we do not anticipate skin irritation to be a serious risk.  
+1.	There is a small possibility that you might develop skin irritation from the wrist worn strap and we will ask you to be vigilant to this, and to remove the strap immediately and withdraw from the study if signs of irritation are detected.   All the items we use are medical-grade and we do not anticipate skin irritation to be a serious risk.  
 
 2.	There is a chance that the cables and wires of the sensors could be a trip hazard and we ask you to take care when moving near them and to make sure that all ends are tucked away.
 
@@ -317,7 +317,7 @@ We will not contact you again after all data, equipment and sensors have been re
 
 
 ### Who has approved this study?  
-This study has been reviewed and received ethical approval from the Biomedical and Life Sciences Research Ethics Sub-Committee (BSRESC) of Maynooth University on XXXXX. If you would like more information about the ethics committee’s approval of this study, please contact research.ethics@mu.ie. 
+This study has been reviewed and received ethical approval from the Biomedical and Life Sciences Research Ethics Sub-Committee (BSRESC) of Maynooth University on 28/05/2025. If you would like more information about the ethics committee’s approval of this study, please contact research.ethics@mu.ie. 
  
 &nbsp;  
 

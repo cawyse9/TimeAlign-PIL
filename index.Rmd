@@ -24,7 +24,7 @@ knitr::include_graphics("images/fn_mu_timealign_jpg.jpg")
  
 
 
-Thank you for your interest and support of TimeAlign, a research project at Maynooth University and RCSI that is investigating the timing of medication in epilepsy.  We are really pleased that you are thinking of  participating in TimeAlign, and we hope that these webpages will tell you everything you need to know.
+Thank you for your interest and support of TimeAlign, a research project at Maynooth University and RCSI that is investigating the effects of timing of medication in epilepsy.  We are really pleased that you are thinking of  participating in TimeAlign, and we hope that these webpages will tell you everything you need to know.
 
 Please do not hesitate to get in touch if you have any questions, we would love to hear from you (TimeAlign\@mu.ie)
 
